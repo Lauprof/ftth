@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FTTH</title>
+  
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div id="nav">
+    
+    <ol>
+      <li><a href="#ftth">FTTH</a></li>
+      <li><a href="#net">Infrastructure</a></li>
+       <li><a href="#adv">Advantage</a></li>
+        <li><a href="#maintenance">Common issues</a></li>
+      
+    </ol>
+    
+    
+    
+    
+  </div>
+  
+  
+  
+  
+  <div class="top" id="ftth">
+    
+    <p>FIBRE TO THE HOME INTERNET<br />(FTTH)</p>
+    
+    
+    
+  </div>
+  
+  <div class="intro">
+    
+    Fibre to the home is a term or a department that deals with connecting clients using optical fibre to their homes and thus able to access the internet.
+    <br><br>
+    Optical fibre refers to a waveguide that is made of two materials of different refractive indices which guide the light through it from the transmitter to the receiver i.e the router.
+    
+    <img id="img1"  src="fiber.jpeg" width="300" height="auto"><br><br>
+    
+    <p id="name">Router</p><br>
+    <img id="img2"  src="router.jpg" alt="Huawei router" width="300" height="300">
+    
+    
+    <br>
+    
+    The router receives the light signals from the fiber cable and decodes the data back to the electrical signals which are then converted to wireless signals using the antennas.
+    
+    When the user is connected to the router wirelessly it converts the wireless data back to electrical signals and finally to the light signals which are then transmitted through the optical fiber to the ISP Network.
+    <br>
+    <span style="color: red;text-decoration:underline; ">Therefore the router acts as a transreceiver ie both a transmitter and a receiver.</span>
+    
+    
+    <br><br>
+    Most ftth network uses single mode fiber and mostly wavelength of about 1310nm close to the the far end of infrared region.Single mode is able to transmit data over long distances with minimal loss.
+    <br>
+    
+    <img id="img2" src="powermeter.jpg" alt="" width="300" height="400"/>
+    
+    
+    <br><br>
+    
+    
+  </div>
+  
+  
+  <div class="network" id="net">
+    
+    <h1>The FTTH Infrastructure</h1>
+    <br>
+    
+    
+    The ftth infrastructure starts from the head office where we have the main routers switches and access to the outside world connectivity.
+    
+    
+    
+    
+    
+    <br><br>
+    
+    <p id="head">Mobile Cell Tower</p>
+    <br>
+    
+    Then we got the Base Transmission station or mobile towers where we got the Optical Line Terminal(OLT).
+    From the OLT we have the SFP device which enable transmission of light signals over long-distance through fiber cable. 
+    <br><br><br>
+    <p id="head">Fiber distribution terminal</p>
+   
+  
+    This is commonly known as the cabinet and it serves as the distribution point and usually has a splitter which demodulates and modulates signals.
+    From the OLT the splitter at the cabinet acts as a demultiplexer for instance a 1:64 splitter has one input and 64 inputs.
+    
+    <img src="fdt.jpg" alt="" />
+    <br><br>
+    
+    <img src="splitterfdt.jpg" alt="" />
+   
+    
+    
+    <p id="head">Fiber Access terminal</p>
+    
+    This is the part where the drop optical fibre cables which run to the client's home is connected or terminated.
+    This provides the client with access to the ISP network .
+    
+    <img src="fat.jpg" alt="" />
+    
+    
+    At the clients' house we have the terminal box called the <b>access terminal box (ATB)</b> where the drop cable is terminated and a patchcord used to connect the router.
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  
+  
+  <div id="adv">
+    
+    <h2>Advantages and disadvantages of fiber network</h2>
+    
+    
+    <p id="head2">Advantages</p>
+    
+    <ol class="advantages">
+      
+    <li>It offers high bandwidth compared with copper cables</li>
+      <li>It is resistant to electromagnetic interference (EMI)</li>
+      <li>It offers more security as it is not easy to eavesdrop</li>
+      <li>It does not suffer from very many losses associated with long distances like in copper cables.</li>
+    </ol>
+    
+    
+    <p id="head2">Disadvantages</p>
+    
+    <ol>
+      <li>It is quite expensive during the construction of the network</li>
+      <li>Fiber optic is quite fragile i.e the cores thus need to be handled with care</li>
+      
+    </ol>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    <div id="maintenance">
+      
+      <h3>Issues affecting your ftth connection</h3>
+      
+      
+        <p>If you have an <b>LOS light</b> on your router this can be caused by one of the following issues.</p>
+        
+        
+        <ol>
+          <li>Fiber core is broken at the ATB</li>
+          <li>Your patchcord is faulty or you mistakenly made it loose at the connector</li>
+          <li>Your drop cable is kinked possibly in the house</li>
+          <li>Your drop cable has the core broken at the fat and needs to be respliced.</li>
+          <li>The connector either at the fat or atb is faulty or dusty</li>
+          <li>You were unpatched at the cabinet mistakenly or intentionally.</li>
+          
+        </ol>
+      
+      <br><br>
+      
+      <h2>How the issues are resolved</h2>
+      <br>
+      <p>After you have raised a ticket and the technicians have come they first measure the power levels.If the levels are outside the required range they then use the laser pen to find the fault.
+      They check how light is passing at the atb then proceed to the fat where they also measure the signal level.
+      If the problem isn't there they can proceed to the cabinet to check the splitter output or change the connectors or the fiber core.
+      
+      
+      
+      
+      
+    </div>
+  
+  
+  
+  
+  <footer>
+    <p style="text-align: center;">&copy; <span id="currentYear"></span> 
+    <br>
+    <br>Designed by Lawrence</p>
+
+    <script>
+      document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+  </footer>
+  
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
