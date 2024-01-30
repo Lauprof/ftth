@@ -23,9 +23,6 @@
       
     </ol>
     
-    
-    
-    
   </div>
   
   
@@ -33,7 +30,7 @@
   
   <div class="top" id="ftth">
     
-    <p>FIBRE TO THE HOME INTERNET<br />(FTTH)</p>
+    <p>FIBRE TO THE HOME INTERNET<br>(FTTH)</p>
     
     
     
@@ -41,9 +38,11 @@
   
   <div class="intro">
     
-    Fibre to the home is a term or a department that deals with connecting clients using optical fibre to their homes and thus able to access the internet.
+    Fibre to the home is a term or a department that deals with connecting clients' homes using optical fibre to the ISP network and thus able to access the internet.
     <br><br>
-    Optical fibre refers to a waveguide that is made of two materials of different refractive indices which guide the light through it from the transmitter to the receiver i.e the router.
+    Optical fibre refers to a waveguide that is made up of two materials of different refractive indices which guide the light through it from the transmitter(Tx) to the receiver(Rx) i.e the router.<b>This is made possible due to the Total Internal Reflection principle </b>.It states that when a ray of light is moving from a material of high refractive index to one with low refractive index and the angle of incidence does not exceed the critical angle then <b>TIR happens.</b>
+    <mark>Silica in its purest form is used to make optic fibre.</mark>
+    <br><br>
     
     <img id="img1"  src="fiber.jpeg" width="300" height="auto"><br><br>
     
@@ -62,7 +61,11 @@
     
     <br><br>
     Most ftth network uses single mode fiber and mostly wavelength of about 1310nm close to the the far end of infrared region.Single mode is able to transmit data over long distances with minimal loss.
-    <br>
+    The losses are measured in decibels and the power in dBm that's decibel per milliwatt.
+   <b> The acceptable range is about -8dBm to -27dBm for the receiver.</b>
+    
+    
+    <br><br><br>
     
     <img id="img2" src="powermeter.jpg" alt="" width="300" height="400"/>
     
@@ -92,6 +95,27 @@
     
     Then we got the Base Transmission station or mobile towers where we got the Optical Line Terminal(OLT).
     From the OLT we have the SFP device which enable transmission of light signals over long-distance through fiber cable. 
+    OLT  is a device used to connect olt fiber and transfer signals. PON OLT is the starting point, which is connected to an aggregation switch through Ethernet cables. It makes a significant difference in PON.
+    
+    The OLT device is a crucial component in PON network, serving as a multi-service providing platform that simultaneously supports IP services and traditional TDM services. Positioned at the edge of the Metropolitan Area Network (MAN) or the exit of the community access network, it consolidates access services and transmits them to the IP network.
+
+In addition to its role in service aggregation, the OLT also functions as a centralized network management platform. It enables device-based network element management, service-based security management, and configuration management. The OLT can monitor and manage devices and ports, facilitate service provisioning and user status monitoring, and allocate bandwidth according to the Quality of Service (QoS) and Service Level Agreement (SLA) requirements of different users.
+<br>
+Its functionalities include:
+<br>
+
+1. Sending Ethernet data to ONU in broadcast mode.
+<br>
+2. Initiating and controlling the ranging process, and recording ranging information.
+<br>
+3. Allocating bandwidth for ONU, controlling the start time of ONU data transmission, and regulating the size of the sending window.
+
+<br>
+<img src="pon.jpg" alt="">
+
+
+<img src="OLT.jpg" alt="">
+
     <br><br><br>
     <p id="head">Fiber distribution terminal</p>
    
@@ -115,9 +139,13 @@
     
     
     At the clients' house we have the terminal box called the <b>access terminal box (ATB)</b> where the drop cable is terminated and a patchcord used to connect the router.
+    <br><br>
     
+    <figure style="text-align: center;">ATB</figure>
+    <img src="atb.jpeg" alt="">
     
-    
+    <figure>Patch cord </figure>
+    <img src="patchcord.jpg" alt="">
     
     
     
@@ -148,14 +176,12 @@
     <ol>
       <li>It is quite expensive during the construction of the network</li>
       <li>Fiber optic is quite fragile i.e the cores thus need to be handled with care</li>
+      <li>Optical fiber suffers from loses such as micro and macro bending esp if the cable is bent at 90° angle.
+      Losses may stem from impurities during manufacturing such as OH- ion which has a certain vibrational frequency within the range of the electromagnetic radiation used.
+      There are also losses due to scattering.
+      </li>
       
     </ol>
-    
-    
-    
-    
-    
-    
     
     </div>
     
@@ -187,10 +213,7 @@
       They check how light is passing at the atb then proceed to the fat where they also measure the signal level.
       If the problem isn't there they can proceed to the cabinet to check the splitter output or change the connectors or the fiber core.
       
-      
-      
-      
-      
+
     </div>
   
   
