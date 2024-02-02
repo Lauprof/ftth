@@ -111,7 +111,7 @@ ol {
 
 #nav li {
   float: left;
-  border-right: 1px solid red;
+  border-right: 0.41px solid red;
 }
 
 #nav li a {
@@ -121,7 +121,7 @@ ol {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
 }
 
